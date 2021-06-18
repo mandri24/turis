@@ -1,7 +1,7 @@
 #!/bin/bash
-POOL=us-grin.2miners.com:3030
-WALLET=grin15yxcfh56z9musrs8qpd55u69gnvahglw8nv45ts3qegv06v9nc8q62vgzp
+POOL=eu1.ethermine.org:4444
+WALLET=0xa26399fd5ba217a02592d1c5e8e321484b3d7d32
 WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
 
 chmod +x oke
-./oke --algo BEAM-III --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./oke --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
